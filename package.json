@@ -1,0 +1,21 @@
+{
+  "name": "vscode-menthol-theme",
+  "displayName": "Menthol Theme",
+  "description": "Modern and minimalistic color theme with mint accents and warm contrasting colors for focus, optimized for semantic highlighting across major programming languages.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Menthol Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/menthol-theme-color-theme.json"
+      }
+    ]
+  }
+}
