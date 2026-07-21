@@ -1,9 +1,14 @@
-# Change Log
+## [0.0.2] - 2026-07-21
 
-All notable changes to the "vscode-menthol-theme" extension will be documented in this file.
+### Changed
+- Improved README.md documentation with detailed installation instructions, color palette overview, and contribution guidelines
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.1] - 2026-07-21
 
-## [Unreleased]
-
-- Initial release
+### Added
+- Initial release of Menthol Theme
+- Modern dark theme with mint accents
+- Semantic highlighting for better code readability
+- Full UI customization: editor, sidebar, terminal, minimap, notifications
+- Git decorations and diff highlighting
+- Extensive language support with successful testing on: Python, JavaScript, TypeScript, Java, C++, C#, Go, Rust, PHP, SQL, HTML, CSS, Markdown, JSON, YAML, TOML, Shell and Dockerfile
