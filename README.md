@@ -8,6 +8,8 @@
 
 [![Install Menthol Theme](https://img.shields.io/badge/VS%20Code-Install%20Menthol%20Theme-007ACC?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=UltraKostik.vscode-menthol-theme)
 
+[![Install from Open VSX](https://img.shields.io/badge/Open%20VSX-Install%20Menthol%20Theme-5C2D91?style=for-the-badge)](https://open-vsx.org/extension/UltraKostik/vscode-menthol-theme)
+
 ![Preview of the extension](images/readme-slide.png)
 
 </div>
