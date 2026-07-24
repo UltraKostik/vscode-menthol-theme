@@ -68,6 +68,7 @@
 		"sideBar.background": "#0A1118",
 		"statusBar.background": "#0F1A1F",
 		"titleBar.activeBackground": "#0A1118",
+		"titleBar.border": "#1A3A42",
 		
 		"activityBarBadge.background": "#5AC8A8",
 		"activityBarBadge.foreground": "#0A1118",
@@ -92,11 +93,17 @@
 		"editorBracketHighlight.foreground4": "#E8D080",
 		"editorBracketHighlight.foreground5": "#E0A0B8",
 		"editorBracketHighlight.foreground6": "#8A8AD8",
+		"editor.findMatchBackground": "#5AC8A833",
+		"editor.findMatchHighlightBackground": "#5AC8A822",
+		"editor.findRangeHighlightBackground": "#5AC8A811",
 		
 		"scrollbarSlider.background": "#1A2A3A",
 		"scrollbarSlider.hoverBackground": "#2A3A4A",
 		"panel.background": "#0A1118",
 		"panel.border": "#1A3A42",
+		"panelSectionHeader.background": "#0F1A1F",
+		"panelSectionHeader.foreground": "#D8E8EE",
+		"panelSectionHeader.border": "#1A3A42",
 		"terminal.background": "#0A1118",
 		"terminal.foreground": "#D8E8EE",
 		"editorGroupHeader.tabsBackground": "#0F1A1F",
@@ -133,6 +140,10 @@
 		"statusBarItem.hoverBackground": "#1A3A42",
 		"statusBarItem.remoteBackground": "#5AC8A8",
 		"statusBarItem.remoteForeground": "#0A1118",
+		"statusBarItem.errorBackground": "#E07070",
+		"statusBarItem.errorForeground": "#0A1118",
+		"statusBarItem.prominentBackground": "#5AC8A8",
+		"statusBarItem.prominentForeground": "#0A1118",
 		"dropdown.background": "#0A1118",
 		"dropdown.foreground": "#D8E8EE",
 		"dropdown.border": "#2A4A52",
@@ -152,7 +163,7 @@
 		"gitDecoration.deletedResourceForeground": "#E08080",
 		"gitDecoration.untrackedResourceForeground": "#5AC8A8",
 		"gitDecoration.ignoredResourceForeground": "#4A6A6A",
-		"gitDecoration.conflictingResourceForeground": "#D06060",
+		"gitDecoration.conflictingResourceForeground": "#E0A0B8",
 
 		"menu.foreground": "#D8E8EE",
 		"menu.background": "#0F1A1F",
@@ -162,7 +173,7 @@
 
 		"textLink.foreground": "#5AC8A8",
 
-		"editorCodeLens.foreground": "#4A7A7A",
+		"editorCodeLens.foreground": "#6A8A8A",
 
 		"editorBracketMatch.background": "#1A3A42",
 		"editorBracketMatch.border": "#2A4A52",
@@ -183,6 +194,8 @@
 		"editorInlayHint.background": "#1A2A2A",
 		"editorInlayHint.typeForeground": "#D4A0E0",
 		"editorInlayHint.parameterForeground": "#E0B090",
+		"editorInlayHint.activeBackground": "#2A4A4A",
+		"editorInlayHint.activeForeground": "#D8E8EE",
 
 		"editorWidget.resizeBorder": "#5AC8A8",
 		"editorGroup.dropBackground": "#1A3A4233",
@@ -193,44 +206,63 @@
 		"chat.responseBackground": "#0A1118",
 		"settings.focusedRowBackground": "#1A3A42",
 		"settings.headerForeground": "#D8E8EE",
+		"settings.focusedRowBorder": "#2A4A52",
+		"settings.headerBorder": "#1A3A42",
 		"ports.iconRunningProcessForeground": "#5AC8A8"
 	},
 	"semanticTokenColors": {
+		"enabled": true,
 		"variable": { "foreground": "#E6EDF3" },
 		"variable.parameter": { "foreground": "#E0B090" },
 		"variable.arguments": { "foreground": "#E8C860" },
 		"variable.constant": { "foreground": "#7AD0A0" },
 		"variable.defaultLibrary": { "foreground": "#70C8E0" },
 		"variable.global": { "foreground": "#E6EDF3" },
-		"variable.readonly": { "fontStyle": "italic" },
+		"variable.readonly": { "fontStyle": "normal" },
 		"variable.declaration": { "fontStyle": "bold" },
 		"variable.decorator": { "foreground": "#E0A0B8", "fontStyle": "bold" },
 		"variable.classMember": { "foreground": "#E8D080" },
 		"variable.dynamicAttribute": { "foreground": "#70C8E0" },
 		"variable.callable": { "fontStyle": "bold" },
-		"variable.readonly.callable": { "fontStyle": "italic bold" },
+		"variable.readonly.callable": { "fontStyle": "bold" },
+		"variable.import": { "foreground": "#6AB8B8" },
+		"variable.export": { "foreground": "#6AB8B8" },
+		"variable.reference": { "fontStyle": "italic" },
+		"variable.pointer": { "foreground": "#E6EDF3" },
 
 		"decorator": { "foreground": "#E0A0B8", "fontStyle": "bold" },
 		"decorator.builtin": { "foreground": "#E0A0B8", "fontStyle": "bold" },
 
 		"function": { "foreground": "#70C8E0" },
 		"function.defaultLibrary": { "foreground": "#70C8E0" },
-		"function.declaration": { "fontStyle": "bold" },
+		"function.declaration": { "fontStyle": "normal" },
+		"function.parameter": { "foreground": "#E0B090" },
+		"function.return": { "foreground": "#D4A0E0", "fontStyle": "italic" },
+		"function.async": { "foreground": "#7AC8E8" },
+		"function.const": { "fontStyle": "normal" },
+		"function.package": { "foreground": "#E8D080" },
 
 		"method": { "foreground": "#70C8E0" },
 		"method.defaultLibrary": { "foreground": "#70C8E0" },
-		"method.declaration": { "fontStyle": "bold" },
+		"method.declaration": { "fontStyle": "normal" },
+		"method.static": { "fontStyle": "bold" },
+		"method.abstract": { "fontStyle": "normal" },
+		"method.const": { "fontStyle": "normal" },
 
 		"class": { "foreground": "#E8D080" },
 		"class.declaration": { "fontStyle": "bold" },
 		"class.builtin": { "foreground": "#E8D080", "fontStyle": "bold" },
-		"class.modification": { "fontStyle": "bold" },
+		"class.modification": { "fontStyle": "normal" },
+		"class.abstract": { "fontStyle": "normal" },
+		"class.final": { "fontStyle": "bold" },
 		"class.error": { "foreground": "#E07070", "fontStyle": "bold" },
 		"class.exception": { "foreground": "#E07070", "fontStyle": "bold" },
+		"class.decorator": { "foreground": "#E0A0B8", "fontStyle": "bold" },
 
 		"interface": { "foreground": "#E8D080" },
 		"interface.declaration": { "fontStyle": "bold" },
 		"interface.builtin": { "foreground": "#E8D080", "fontStyle": "bold" },
+		"interface.abstract": { "fontStyle": "normal" },
 
 		"enum": { "foreground": "#E8D080" },
 		"enum.declaration": { "fontStyle": "bold" },
@@ -242,29 +274,32 @@
 		"type.declaration": { "fontStyle": "bold" },
 		"type.builtin": { "foreground": "#D4A0E0", "fontStyle": "italic" },
 		"type.defaultLibrary": { "foreground": "#D4A0E0", "fontStyle": "italic" },
+		"type.generic": { "foreground": "#D4A0E0", "fontStyle": "italic" },
+		"type.interface": { "foreground": "#E8D080", "fontStyle": "italic" },
 
 		"property": { "foreground": "#E6EDF3" },
 		"property.declaration": { "fontStyle": "bold" },
 		"property.static": { "fontStyle": "bold" },
-		"property.readonly": { "fontStyle": "italic" },
+		"property.readonly": { "fontStyle": "normal" },
 
 		"namespace": { "foreground": "#E8D080" },
 		"namespace.declaration": { "fontStyle": "bold" },
 
 		"macro": { "foreground": "#E0B090" },
+		"macro.unsafe": { "foreground": "#E07070", "fontStyle": "bold" },
 		"event": { "foreground": "#E0B090" },
 		"operator": { "foreground": "#6AA8A8" },
 		"operator.overloaded": { "foreground": "#E0B090", "fontStyle": "bold" },
 		"label": { "foreground": "#6ABA8A" },
-		"parameter": { "foreground": "#E0B090", "fontStyle": "italic" },
-		"parameter.readonly": { "fontStyle": "italic" },
+		"parameter": { "foreground": "#E0B090" },
+		"parameter.readonly": { "fontStyle": "normal" },
 		"typeParameter": { "foreground": "#D4A0E0", "fontStyle": "italic" },
 		"member": { "foreground": "#E6EDF3" },
 		"variable.property": { "foreground": "#E6EDF3" },
 		"function.method": { "foreground": "#70C8E0" },
 		"function.constructor": { "foreground": "#E8D080" },
 		"function.special": { "foreground": "#E8D080" },
-		"function.async": { "fontStyle": "italic" },
+		"function.unsafe": { "foreground": "#E07070", "fontStyle": "bold" },
 		"newOperator": { "foreground": "#7A8AC8", "fontStyle": "italic" },
 		"stringLiteral": { "foreground": "#7AD0A0" },
 		"numberLiteral": { "foreground": "#E0B090" },
@@ -272,7 +307,6 @@
 		"*.abstract": { "fontStyle": "italic" },
 		"*.static": { "fontStyle": "bold" },
 		"operator.unsafe": { "foreground": "#E07070", "fontStyle": "bold" },
-		"function.unsafe": { "foreground": "#E07070", "fontStyle": "bold" },
 		"method.unsafe": { "foreground": "#E07070", "fontStyle": "bold" }
 	},
 	"tokenColors": [
@@ -363,6 +397,34 @@
 		{
 			"name": "Java function definition",
 			"scope": "entity.name.function.java",
+			"settings": {
+				"foreground": "#70C8E0"
+			}
+		},
+		{
+			"name": "GraphQL field",
+			"scope": "entity.name.field.graphql",
+			"settings": {
+				"foreground": "#70C8E0"
+			}
+		},
+		{
+			"name": "GraphQL argument",
+			"scope": "variable.argument.graphql",
+			"settings": {
+				"foreground": "#E0B090"
+			}
+		},
+		{
+			"name": "Prisma model",
+			"scope": "entity.name.model.prisma",
+			"settings": {
+				"foreground": "#E8D080"
+			}
+		},
+		{
+			"name": "Prisma field",
+			"scope": "entity.name.field.prisma",
 			"settings": {
 				"foreground": "#70C8E0"
 			}
@@ -675,10 +737,39 @@
 			}
 		},
 		{
+			"name": "GitGutter inserted",
+			"scope": "markup.inserted.git_gutter",
+			"settings": {
+				"foreground": "#80E0B0"
+			}
+		},
+		{
+			"name": "GitGutter deleted",
+			"scope": "markup.deleted.git_gutter",
+			"settings": {
+				"foreground": "#E08080"
+			}
+		},
+		{
+			"name": "GitGutter changed",
+			"scope": "markup.changed.git_gutter",
+			"settings": {
+				"foreground": "#D8D890"
+			}
+		},
+		{
 			"name": "Invalid",
 			"scope": ["invalid", "invalid.illegal"],
 			"settings": {
 				"foreground": "#E06060"
+			}
+		},
+		{
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated",
+			"settings": {
+				"foreground": "#D8D890",
+				"fontStyle": "strikethrough"
 			}
 		},
 		{
@@ -772,7 +863,7 @@
 		},
 		{
 			"name": "Exceptions",
-			"scope": ["support.type.exception", "entity.other.inherited-class.java"],
+			"scope": ["support.type.exception"],
 			"settings": {
 				"foreground": "#E07070",
 				"fontStyle": "bold"
