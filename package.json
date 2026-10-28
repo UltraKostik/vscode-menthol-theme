@@ -48,5 +48,8 @@
         "path": "./themes/menthol-high-contrast-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "ovsx": "^1.3.0"
   }
 }
